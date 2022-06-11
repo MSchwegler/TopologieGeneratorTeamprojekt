@@ -1,0 +1,1014 @@
+<Project version="20.5.0.7" edition="lite" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PHP Generator for MySQL Lite\lang.en.php" phpDriver="1" outputPath="D:\Programme\xampp\htdocs\topologie" copySystemFiles="true" generateModifiedDataOnly="true" outputFilesExtension="php" colorSchemeName="cerulean">
+  <ConnectionOptions host="localhost" port="3306" login="root" password="" database="topologie" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="localhost" port="3306" login="root" password="" database="topologie" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <DataSources>
+    <DataSource name="channel"/>
+    <DataSource name="communication"/>
+    <DataSource name="comtype"/>
+    <DataSource name="field"/>
+    <DataSource name="hardware"/>
+    <DataSource name="com_tr_trigger"/>
+    <DataSource name="messagetype"/>
+    <DataSource name="segment"/>
+    <DataSource name="segment_fields"/>
+    <DataSource name="software"/>
+    <DataSource name="software_hardwares"/>
+    <DataSource name="tr_trigger"/>
+  </DataSources>
+  <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false" menuMode="1">
+    <Pages>
+      <Page type="table" tableName="channel" numberByDataSource="0" fileName="channel" caption="Channel" shortCaption="Channel" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="version" caption="Version" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="communication" numberByDataSource="0" fileName="communication" caption="Communication" shortCaption="Communication" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="partner_software_id" caption="Partner Software Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="channel_id" caption="Channel Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="channel" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="messagetype_id" caption="Messagetype Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="messagetype" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="software_id" caption="Software Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="software" linkFieldName="id" displayFieldName="os_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="comtype_id" caption="Comtype Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="comtype" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="partner_software_id"/>
+            <Column fieldName="channel_id"/>
+            <Column fieldName="messagetype_id"/>
+            <Column fieldName="software_id"/>
+            <Column fieldName="comtype_id"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="comtype" numberByDataSource="0" fileName="comtype" caption="Comtype" shortCaption="Comtype" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="field" numberByDataSource="0" fileName="field" caption="Field" shortCaption="Field" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="content" caption="Content" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="content"/>
+            <Column fieldName="name"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="hardware" numberByDataSource="0" fileName="hardware" caption="Hardware" shortCaption="Hardware" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="ip" caption="Ip" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="version" caption="Version" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="type" caption="Type" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="ip"/>
+            <Column fieldName="name"/>
+            <Column fieldName="version"/>
+            <Column fieldName="type"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="com_tr_trigger" numberByDataSource="0" fileName="com_tr_trigger" caption="Com Tr Trigger" shortCaption="Com Tr Trigger" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="tr_trigger_id" caption="Tr Trigger Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="tr_trigger" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="communication_id" caption="Communication Id" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="communication" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </List>
+          <View>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="tr_trigger_id"/>
+            <Column fieldName="communication_id" visible="false"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="messagetype" numberByDataSource="0" fileName="messagetype" caption="Messagetype" shortCaption="Messagetype" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="comtype_id" caption="Comtype Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="comtype" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="comtype_id"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="segment" numberByDataSource="0" fileName="segment" caption="Segment" shortCaption="Segment" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="messagetype_id" caption="Messagetype Id" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="messagetype" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="messagetype_id"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="segment_fields" numberByDataSource="0" fileName="segment_fields" caption="Segment Fields" shortCaption="Segment Fields" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="segments_id" caption="Segments Id" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="segment" linkFieldName="id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="fields_id" caption="Fields Id" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="field" linkFieldName="id" displayFieldName="content" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </List>
+          <View>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="segments_id"/>
+            <Column fieldName="fields_id"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="software" numberByDataSource="0" fileName="software" caption="Software" shortCaption="Software" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="os_name" caption="Os Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="os_version" caption="Os Version" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="type" caption="Type" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="version" caption="Version" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="os_name"/>
+            <Column fieldName="os_version"/>
+            <Column fieldName="name"/>
+            <Column fieldName="type"/>
+            <Column fieldName="version"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="software_hardwares" numberByDataSource="0" fileName="software_hardwares" caption="Software Hardwares" shortCaption="Software Hardwares" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="softwares_id" caption="Softwares Id" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="software" linkFieldName="id" displayFieldName="os_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="hardwares_id" caption="Hardwares Id" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="hardware" linkFieldName="id" displayFieldName="ip" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </List>
+          <View>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </View>
+          <Edit>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </Print>
+          <Export>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </Export>
+          <Compare>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="softwares_id"/>
+            <Column fieldName="hardwares_id"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="tr_trigger" numberByDataSource="0" fileName="tr_trigger" caption="Tr Trigger" shortCaption="Tr Trigger" allowAddMultipleRecords="false" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </View>
+          <Edit>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id"/>
+            <Column fieldName="name"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="name"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization/>
+    <UserGrants/>
+    <Header/>
+    <Footer/>
+    <PHPOptions/>
+    <Groups>
+      <Group caption="No group"/>
+    </Groups>
+    <outgoingMailSettings mailer="0" fromEmail="" fromName=""/>
+  </Presentation>
+  <UserCSS/>
+  <PdfUserStyles/>
+  <PrintUserStyles/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false"/>
+  <DefaultDataFormats numberAfterDecimal="4" DecimalSeparator="." ThousandSeparator="," DateTimeFormat="Y-m-d H:i:s" DateFormat="Y-m-d" firstDayOfWeek="0"/>
+</Project>
