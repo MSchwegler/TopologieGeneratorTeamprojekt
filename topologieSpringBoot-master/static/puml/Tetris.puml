@@ -1,0 +1,7 @@
+@startuml
+object Tetris
+Tetris : ID : 12
+Tetris : Name: Tets
+Tetris : Version :0.9
+Tetris : OS: Test
+@enduml

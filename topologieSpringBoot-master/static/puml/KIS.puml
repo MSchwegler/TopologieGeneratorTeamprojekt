@@ -1,0 +1,7 @@
+@startuml
+object KIS
+KIS : ID : 21
+KIS : Name: TESTOMAT
+KIS : Version :0.1
+KIS : OS: Windows
+@enduml

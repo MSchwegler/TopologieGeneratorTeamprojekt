@@ -1,0 +1,7 @@
+@startuml
+object Mathis'test
+Mathis'test : ID : 20
+Mathis'test : Name: Test von Mathis
+Mathis'test : Version :1.0
+Mathis'test : OS: Mathis Test
+@enduml
